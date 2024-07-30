@@ -7,7 +7,7 @@
 
 The project explores the potential of interactive dashboards to convey the complexity of climate change impacts on hydrology, soil, and vegetation. It highlights the challenges of science communication in the digital age, with a particular focus on the critical evaluation of sources and the presentation of scientific data. Through the development and comparative analysis of dashboard solutions, the project aims to make scientific data accessible and understandable to the public. The importance of contextualization and user-centered design is emphasized to create dashboards that educate and engage the audience, fostering a deeper understanding of environmental issues.
 
-[View Code on GitHub](https://github.com/Neon-Purplelight/klima_kompass_navigator)
+[View Code on GitHub](https://github.com/TimSahre/Portfolio_Projects/tree/master/KKN)
 
 [![](https://img.shields.io/badge/Python-green?logo=Python)](#)
 [![](https://img.shields.io/badge/Flask-green?logo=Flask)](#) 
