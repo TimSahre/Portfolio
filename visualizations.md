@@ -1,7 +1,9 @@
-##  Wildfire Simulation
+# Various Visualizations for Germany Using Boundary Masks
 
-<img src="gifs/forest_fire_with_metrics.gif" alt="Wildfire Simulation GIF"/>
+This project explores two different techniques to create unique visualizations constrained by the boundary mask of Germany.
 
-**Project description:** The project simulates forest fire dynamics, integrating natural factors such as wind, temperature, and vegetation. A grid-based model represents landscape elements like trees, water and ash. Key features include temperature-driven fire behavior, wind-influenced fire spread, and post-fire regeneration through rainfall. The simulation emphasizes the interaction of ecological processes and randomness, offering insights into environmental dynamics. Python and Matplotlib were used to implement the model, which visualizes the cyclical nature of destruction and renewal over time.
+## 1. Animated 2D Gaussian Visualization
+Dynamic 2D Gaussian functions (bell curves) are displayed within the borders of a mask based on a black-and-white representation of Germany. The Gaussians change their position, width, and amplitude randomly over time, resulting in a vivid, evolving animation. Areas outside the mask are excluded, and the animation is saved as a `.gif`.
 
-[View Notebook](https://colab.research.google.com/drive/1ixRtHCDB9Zf6mZSYNfI67Kq2GQgLLepl)
+## 2. Filling a Mask with Circles
+This visualization fills the shape of Germany with randomly placed colorful circles of fixed size. The circles are positioned within the black areas of the mask without overlapping, creating an aesthetically pleasing result. A predefined color palette enhances the visual effect, and the output is saved as an image.
