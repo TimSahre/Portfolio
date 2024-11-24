@@ -1,6 +1,6 @@
 # Various Visualizations for Germany Using Boundary Masks
 
-This project explores two different techniques to create unique visualizations constrained by the boundary mask of Germany.
+This project explores different techniques to create unique visualizations constrained by the boundary mask of Germany.
 
 ## 1. Animated 2D Gaussian Visualization
 Dynamic 2D Gaussian functions (bell curves) are displayed within the borders of a mask based on a black-and-white representation of Germany. The Gaussians change their position, width, and amplitude randomly over time, resulting in a vivid, evolving animation. Areas outside the mask are excluded, and the animation is saved as a `.gif`.
