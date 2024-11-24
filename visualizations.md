@@ -2,6 +2,10 @@
 
 This project explores different techniques to create unique visualizations constrained by the boundary mask of Germany.
 
+![Used Mask](images/germany_resized_100x100_rgba.png)
+
+germany_resized_100x100_rgba.png
+
 [View Notebook](https://colab.research.google.com/drive/1cTRV19aWN1l-nwperGx57SVPyF0c7LoV#scrollTo=bbl8KXxPlzGM)
 
 ## 1. Animated 2D Gaussian Visualization
