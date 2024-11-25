@@ -2,7 +2,7 @@
 
 This project explores different techniques to create unique visualizations constrained by the boundary mask of Germany.
 
-[View Notebook](https://colab.research.google.com/drive/1cTRV19aWN1l-nwperGx57SVPyF0c7LoV#scrollTo=L_SJU6SHbO8e)
+[View Notebook](https://colab.research.google.com/drive/1cTRV19aWN1l-nwperGx57SVPyF0c7LoV)
 
 | Description | Visualization |
 |------|---------------|
