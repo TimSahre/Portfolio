@@ -1,4 +1,4 @@
-# Various Visualizations for Germany Using Boundary Masks <img src="images/germany_resized_100x100_rgba.png" alt="Used Mask" style="width: 50%;">
+# Various Visualizations for Germany Using Boundary Masks <img src="images/germany_resized_100x100_rgba.png" alt="Used Mask" style="width: 25%;">
 
 This project explores different techniques to create unique visualizations constrained by the boundary mask of Germany.
 
