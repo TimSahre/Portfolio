@@ -1,7 +1,9 @@
 # Various Visualizations for Germany Using Boundary Masks
 This project explores different techniques to create unique visualizations constrained by the boundary mask of Germany.
 
-![Used Mask](images/germany_resized_100x100_rgba.png) 
+![Used Mask](images/germany_resized_100x100_rgba.png)
+![Used Mask](images/france_100.png)
+
 
 | Text | Visualization |
 |------|---------------|
