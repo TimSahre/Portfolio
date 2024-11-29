@@ -3,9 +3,9 @@
 <img src="images/congo_basin_analysis.png"/>
 
 
-### Portfolio Project: Congo Basin Habitat Analysis
+### Mapping Biodiversity with Geospatial Data
 
-**Mapping Biodiversity with Geospatial Data**
+**Congo Basin Habitat Analysis**
 
 This project analyzes biodiversity in the Congo Basin using geospatial data, focusing on the habitat distribution of key species such as bonobos, chimpanzees, gorillas, forest elephants, and hippopotamuses. Using Python and libraries such as GeoPandas, Matplotlib, and Contextily, the habitats of these species are visualized on high-resolution maps, utilizing the Mollweide projection for accurate area representation.
 
