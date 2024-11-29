@@ -2,6 +2,15 @@
 
 <img src="gifs/forest_fire_with_metrics.gif" alt="Wildfire Simulation GIF"/>
 
-**Project description:** The project simulates forest fire dynamics, integrating natural factors such as wind, temperature, and vegetation. A grid-based model represents landscape elements like trees, water and ash. Key features include temperature-driven fire behavior, wind-influenced fire spread, and post-fire regeneration through rainfall. The simulation emphasizes the interaction of ecological processes and randomness, offering insights into environmental dynamics. Python and Matplotlib were used to implement the model, which visualizes the cyclical nature of destruction and renewal over time.
+### Portfolio Project: Congo Basin Habitat Analysis
 
-[View Notebook](https://colab.research.google.com/drive/1ixRtHCDB9Zf6mZSYNfI67Kq2GQgLLepl)
+**Mapping Biodiversity with Geospatial Data**
+
+This project analyzes biodiversity in the Congo Basin using geospatial data, focusing on the habitat distribution of key species such as bonobos, chimpanzees, gorillas, forest elephants, and hippopotamuses. Using Python and libraries such as GeoPandas, Matplotlib, and Contextily, the habitats of these species are visualized on high-resolution maps, utilizing the Mollweide projection for accurate area representation.
+
+#### Key Features
+- **Data Filtering and Visualization**: Large datasets are efficiently filtered to focus the analysis on relevant species and regions, emphasizing the importance of data preparation for efficient processing.
+- **Habitat Mapping**: Species habitats are displayed in distinct colors to highlight ecological patterns and relationships.
+- **Actionable Insights**: Demonstrates how efficient data filtering and analysis techniques can contribute to conservation planning and biodiversity research.
+
+The code and visualizations are available [here](https://timsahre.github.io/Portfolio/).
