@@ -14,4 +14,4 @@ This project analyzes biodiversity in the Congo Basin using geospatial data, foc
 - **Habitat Mapping**: Species habitats are displayed in distinct colors to highlight ecological patterns and relationships.
 - **Actionable Insights**: Demonstrates how efficient data filtering and analysis techniques can contribute to conservation planning and biodiversity research.
 
-[View Notebook](https://colab.research.google.com/drive/1MKYyHyvB4pw7hEOq2O9X6v1JZyv3bz8G)
+[View Notebook](https://colab.research.google.com/drive/1NOhIcxSjZVaQz_tosqs_cnCSzssA5mRS)
