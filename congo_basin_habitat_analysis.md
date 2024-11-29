@@ -1,7 +1,7 @@
 ##  Congo Basin Habitat Analysis: Mapping Biodiversity with Geospatial Data
 
-<img src="gifs/forest_fire_with_metrics.gif" alt="Wildfire Simulation GIF"/>
-images/congo_basin_analysis.png
+<img src="images/congo_basin_analysis.png"/>
+
 
 ### Portfolio Project: Congo Basin Habitat Analysis
 
