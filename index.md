@@ -74,6 +74,8 @@ The aim of the project was the development of an automated, non-destructive meas
 
 ### GIS
 
+[Mapping Biodiversity with Geospatial Data](congo_basin_habitat_analysis.md)
+
 [NDWI Analysis](ndwi.md)
 
 [Multitemporal Analysis](multitemporal_analysis.md)
