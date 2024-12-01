@@ -15,24 +15,29 @@
       /* Inline-Button-Styling */
       #returnButton {
         padding: 10px 20px;
-        background-color: #4CAF50; /* Grün */
+        background-color: #8CC63F; /* Anpassung an das gewünschte Grün */
         color: white; /* Weißer Text */
         border: none;
         border-radius: 5px; /* Runde Kanten */
         font-size: 14px;
         cursor: pointer;
-        margin-top: 10px; /* Abstand nach oben */
+        margin-bottom: 10px; /* Abstand nach unten */
         display: inline-block;
       }
 
       #returnButton:hover {
-        background-color: #45a049; /* Etwas dunkleres Grün bei Hover */
+        background-color: #7BAA36; /* Dunkleres Grün bei Hover */
       }
     </style>
   </head>
   <body>
     <div class="wrapper">
       <header>
+        <!-- Rückkehr-Button -->
+        <button id="returnButton" onclick="location.href='{{ "/" | absolute_url }}'">
+          Zurück zur Startseite
+        </button>
+
         <h1>
           <a href="{{ "/" | absolute_url }}" style="color: black;">
             {{ site.title | default: site.github.repository_name }}
@@ -51,10 +56,6 @@
       </section>
 
       <footer>
-        <!-- Rückkehr-Button -->
-        <button id="returnButton" onclick="location.href='{{ "/" | absolute_url }}'">
-          Return
-        </button>
       </footer>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
