@@ -73,7 +73,7 @@
       <header>
         <!-- Rückkehr-Button -->
         <button id="returnButton" onclick="location.href='{{ "/" | absolute_url }}'">
-          Return
+          Zurück zur Startseite
         </button>
 
         <h1>
@@ -98,6 +98,11 @@
           </p>
           <button id="toggleInfoButton" onclick="toggleInfo()">Mehr anzeigen</button>
         </div>
+      </section>
+
+      <!-- Hier werden die Projekte angezeigt -->
+      <section>
+        {{ content }}
       </section>
 
       <footer>
