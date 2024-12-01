@@ -12,125 +12,52 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
     <style>
-      /* Grundlegendes Layout */
-      .wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        max-width: 1200px;
-        margin: 0 auto;
-        gap: 20px;
-      }
-
-      .left-container {
-        flex: 1 1 60%; /* Linke Spalte mit breiterem Platz */
-        max-width: 60%;
-      }
-
-      .right-container {
-        flex: 1 1 40%; /* Rechte Spalte für Projekte */
-        max-width: 40%;
-      }
-
-      img {
-        max-width: 100%;
-        border-radius: 50%;
-        display: block;
-        margin: 0 auto;
-      }
-
-      .info-text {
-        margin-top: 20px;
-        padding: 15px;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        background-color: #f9f9f9;
-      }
-
-      /* Button-Styling */
+      /* Inline-Button-Styling */
       #returnButton {
         padding: 10px 20px;
-        background-color: #8CC63F; /* Grüner Button */
+        background-color: #8CC63F; /* Anpassung an das gewünschte Grün */
         color: white; /* Weißer Text */
         border: none;
-        border-radius: 5px;
+        border-radius: 5px; /* Runde Kanten */
         font-size: 14px;
         cursor: pointer;
-        margin-bottom: 10px;
+        margin-bottom: 10px; /* Abstand nach unten */
+        display: inline-block;
       }
 
       #returnButton:hover {
         background-color: #7BAA36; /* Dunkleres Grün bei Hover */
       }
-
-      /* Styling für Umschaltfunktion */
-      .info-full {
-        display: none;
-      }
-
-      #toggleInfoButton {
-        padding: 5px 15px;
-        background-color: #8CC63F;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        font-size: 12px;
-        cursor: pointer;
-        margin-top: 10px;
-        display: block;
-      }
-
-      #toggleInfoButton:hover {
-        background-color: #7BAA36;
-      }
     </style>
-    <script>
-      // Umschalten der Info-Anzeige
-      function toggleInfo() {
-        const fullText = document.querySelector('.info-full');
-        const button = document.querySelector('#toggleInfoButton');
-        if (fullText.style.display === 'none' || fullText.style.display === '') {
-          fullText.style.display = 'block';
-          button.innerText = 'Weniger anzeigen';
-        } else {
-          fullText.style.display = 'none';
-          button.innerText = 'Mehr anzeigen';
-        }
-      }
-    </script>
   </head>
   <body>
     <div class="wrapper">
-      <!-- Linker Bereich -->
-      <div class="left-container">
-        <header>
-          <!-- Rückkehr-Button -->
-          <button id="returnButton" onclick="location.href='{{ "/" | absolute_url }}'">
-            Zurück zur Startseite
-          </button>
+      <header>
+        <!-- Rückkehr-Button -->
+        <button id="returnButton" onclick="location.href='{{ "/" | absolute_url }}'">
+          Return
+        </button>
 
-          <h1>Tim Sahre</h1>
-          <img src="{{ site.logo | relative_url }}" alt="Tim Sahre">
-        </header>
+        <h1>
+          <a href="{{ "/" | absolute_url }}" style="color: black;">
+            {{ site.title | default: site.github.repository_name }}
+          </a>
+        </h1>
 
-        <!-- Info-Bereich -->
-        <div class="info-text">
-          <p class="info-short">
-            Environmental Informatics | Bridging Technology & Ecology for Better Futures
-          </p>
-          <p class="info-full">
-            Interested in learning and implementing multidisciplinary approaches to complex questions and passionate about utilizing technology to solve pressing environmental challenges, my academic path has been a blend of environmental science and IT. During my studies, I mastered crucial technical skills in environmental information systems, databases, and web technologies, further developing my expertise in environmental analysis. I worked on projects ranging from the use of environmental information systems to ecological data analysis, combining theoretical knowledge with practical applications to solve contemporary environmental problems.
-          </p>
-          <button id="toggleInfoButton" onclick="toggleInfo()">Mehr anzeigen</button>
-        </div>
-      </div>
+        {% if site.logo %}
+          <img src="{{ site.logo | relative_url }}" alt="Logo" />
+        {% endif %}
 
-      <!-- Rechter Bereich -->
-      <div class="right-container">
-        <section>
-          <h2>Selected projects</h2>
-          {{ content }}
-        </section>
-      </div>
+        <p>{{ site.description | default: site.github.project_tagline }}</p>
+      </header>
+
+      <section>
+        {{ content }}
+      </section>
+
+      <footer>
+      </footer>
     </div>
+    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
   </body>
 </html>
