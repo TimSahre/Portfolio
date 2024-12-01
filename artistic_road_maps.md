@@ -5,8 +5,6 @@ Key features include dynamic adjustment of map titles, subtitles, and output fil
 
 This project efficiently combines geospatial analysis with data visualization to produce polished, ready-to-use maps.
 
-test
-
 ## Examples
 
 ![Dynamic Map Visualizer Example](images/artistic_road_maps.png)
