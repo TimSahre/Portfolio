@@ -1,0 +1,23 @@
+/* Styling für den Rückkehr-Button */
+#returnButton {
+  padding: 10px 20px;
+  background-color: #660033; /* Dunkler Rotton */
+  color: white; /* Weißer Text */
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Animationen */
+}
+
+/* Hover-Effekt für den Button */
+#returnButton:hover {
+  background-color: #99004d; /* Hellerer Rotton */
+  transform: scale(1.05); /* Leichter Vergrößerungseffekt */
+}
+
+/* Optional: Positionierung des Buttons */
+#returnButton {
+  margin-top: 20px;
+  display: inline-block;
+}
