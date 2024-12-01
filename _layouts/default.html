@@ -32,6 +32,13 @@
       /* Umschaltbare Informationen */
       .info-full {
         display: none; /* Anfangs ausgeblendet */
+        max-height: 150px; /* Begrenzte Höhe für kleine Bildschirme */
+        overflow-y: auto; /* Scrollen ermöglichen */
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+        margin-top: 10px;
       }
 
       #toggleInfoButton {
