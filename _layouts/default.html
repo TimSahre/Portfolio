@@ -21,12 +21,27 @@
         border-radius: 5px; /* Runde Kanten */
         font-size: 14px;
         cursor: pointer;
-        margin-bottom: 10px; /* Abstand nach unten */
-        display: inline-block;
+        margin: 0; /* Kein zusätzlicher Abstand */
       }
 
       #returnButton:hover {
         background-color: #7BAA36; /* Dunkleres Grün bei Hover */
+      }
+
+      /* Flexbox-Layout für Header */
+      header {
+        display: flex;
+        align-items: center; /* Vertikale Ausrichtung */
+        gap: 10px; /* Abstand zwischen den Elementen */
+      }
+
+      header h1 {
+        margin: 0; /* Überschrift ohne Standard-Abstand */
+      }
+
+      header h1 a {
+        color: black; /* Schwarzer Text */
+        text-decoration: none; /* Keine Unterstreichung */
       }
     </style>
   </head>
@@ -35,11 +50,11 @@
       <header>
         <!-- Rückkehr-Button -->
         <button id="returnButton" onclick="location.href='{{ "/" | absolute_url }}'">
-          Return
+          <-
         </button>
 
         <h1>
-          <a href="{{ "/" | absolute_url }}" style="color: black;">
+          <a href="{{ "/" | absolute_url }}">
             {{ site.title | default: site.github.repository_name }}
           </a>
         </h1>
@@ -47,8 +62,6 @@
         {% if site.logo %}
           <img src="{{ site.logo | relative_url }}" alt="Logo" />
         {% endif %}
-
-        <p>{{ site.description | default: site.github.project_tagline }}</p>
       </header>
 
       <section>
