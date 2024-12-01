@@ -39,11 +39,6 @@
           </a>
         </h1>
 
-        <!-- Rückkehr-Button -->
-        <button id="returnButton" onclick="location.href='{{ "/" | absolute_url }}'">
-          Return
-        </button>
-
         {% if site.logo %}
           <img src="{{ site.logo | relative_url }}" alt="Logo" />
         {% endif %}
@@ -56,6 +51,10 @@
       </section>
 
       <footer>
+        <!-- Rückkehr-Button -->
+        <button id="returnButton" onclick="location.href='{{ "/" | absolute_url }}'">
+          Return
+        </button>
       </footer>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
