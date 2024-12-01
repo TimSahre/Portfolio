@@ -7,10 +7,28 @@
     <title>Tim's Portfolio</title>
 
     {% seo %}
-      <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
+    <style>
+      /* Inline-Button-Styling */
+      #returnButton {
+        padding: 10px 20px;
+        background-color: #4CAF50; /* Grün */
+        color: white; /* Weißer Text */
+        border: none;
+        border-radius: 5px; /* Runde Kanten */
+        font-size: 14px;
+        cursor: pointer;
+        margin-top: 10px; /* Abstand nach oben */
+        display: inline-block;
+      }
+
+      #returnButton:hover {
+        background-color: #45a049; /* Etwas dunkleres Grün bei Hover */
+      }
+    </style>
   </head>
   <body>
     <div class="wrapper">
@@ -23,7 +41,7 @@
 
         <!-- Rückkehr-Button -->
         <button id="returnButton" onclick="location.href='{{ "/" | absolute_url }}'">
-          Return
+          Zurück zur Startseite
         </button>
 
         {% if site.logo %}
