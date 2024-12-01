@@ -12,6 +12,40 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
     <style>
+      /* Grundlegendes Layout */
+      .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 0 auto;
+        gap: 20px;
+      }
+
+      .left-container {
+        flex: 1 1 60%; /* Linke Spalte mit breiterem Platz */
+        max-width: 60%;
+      }
+
+      .right-container {
+        flex: 1 1 40%; /* Rechte Spalte für Projekte */
+        max-width: 40%;
+      }
+
+      img {
+        max-width: 100%;
+        border-radius: 50%;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .info-text {
+        margin-top: 20px;
+        padding: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+      }
+
       /* Button-Styling */
       #returnButton {
         padding: 10px 20px;
@@ -28,33 +62,29 @@
         background-color: #7BAA36; /* Dunkleres Grün bei Hover */
       }
 
-      /* Styling für den Info-Bereich */
-      .info-short {
-        display: block; /* Immer sichtbar */
-      }
-
+      /* Styling für Umschaltfunktion */
       .info-full {
-        display: none; /* Anfangs versteckt */
+        display: none;
       }
 
-      /* Styling für den Mehr-Anzeigen-Button */
       #toggleInfoButton {
         padding: 5px 15px;
-        background-color: #8CC63F; /* Grüner Button */
+        background-color: #8CC63F;
         color: white;
         border: none;
         border-radius: 5px;
         font-size: 12px;
         cursor: pointer;
         margin-top: 10px;
+        display: block;
       }
 
       #toggleInfoButton:hover {
-        background-color: #7BAA36; /* Dunkleres Grün bei Hover */
+        background-color: #7BAA36;
       }
     </style>
     <script>
-      // JavaScript zum Umschalten der Info-Anzeige
+      // Umschalten der Info-Anzeige
       function toggleInfo() {
         const fullText = document.querySelector('.info-full');
         const button = document.querySelector('#toggleInfoButton');
@@ -70,26 +100,20 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <!-- Rückkehr-Button -->
-        <button id="returnButton" onclick="location.href='{{ "/" | absolute_url }}'">
-          Zurück zur Startseite
-        </button>
+      <!-- Linker Bereich -->
+      <div class="left-container">
+        <header>
+          <!-- Rückkehr-Button -->
+          <button id="returnButton" onclick="location.href='{{ "/" | absolute_url }}'">
+            Zurück zur Startseite
+          </button>
 
-        <h1>
-          <a href="{{ "/" | absolute_url }}" style="color: black;">
-            {{ site.title | default: site.github.repository_name }}
-          </a>
-        </h1>
+          <h1>Tim Sahre</h1>
+          <img src="{{ site.logo | relative_url }}" alt="Tim Sahre">
+        </header>
 
-        {% if site.logo %}
-          <img src="{{ site.logo | relative_url }}" alt="Logo" />
-        {% endif %}
-      </header>
-
-      <section>
         <!-- Info-Bereich -->
-        <div>
+        <div class="info-text">
           <p class="info-short">
             Environmental Informatics | Bridging Technology & Ecology for Better Futures
           </p>
@@ -98,16 +122,15 @@
           </p>
           <button id="toggleInfoButton" onclick="toggleInfo()">Mehr anzeigen</button>
         </div>
-      </section>
+      </div>
 
-      <!-- Hier werden die Projekte angezeigt -->
-      <section>
-        {{ content }}
-      </section>
-
-      <footer>
-      </footer>
+      <!-- Rechter Bereich -->
+      <div class="right-container">
+        <section>
+          <h2>Selected projects</h2>
+          {{ content }}
+        </section>
+      </div>
     </div>
-    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
   </body>
 </html>
